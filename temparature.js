@@ -2,6 +2,7 @@ const API_KEY = `03dc96c48ba51d0def382fd658a0d800`;
 const searchTemperature =()=>{
     const city = document.getElementById("city-name")
     const cityText = city.value
+    city.value = ''
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityText}&appid=${API_KEY}&units=metric
 `;
     // console.log(url)
